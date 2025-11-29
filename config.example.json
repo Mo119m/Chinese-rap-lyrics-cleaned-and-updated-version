@@ -1,0 +1,30 @@
+{
+  "model_id": "Qwen/Qwen2.5-1.5B",
+  "batch_size": 16,
+  "max_length": 512,
+  
+  "contrastive": {
+    "epochs": 10,
+    "batch_size": 1024,
+    "temperature": 0.2,
+    "hidden_dim": 512,
+    "proj_dim": 128,
+    "learning_rate": 0.001,
+    "noise_std": 0.05,
+    "dropout": 0.05
+  },
+  
+  "clustering": {
+    "pca_components": 50,
+    "umap_neighbors": 15,
+    "umap_min_dist": 0.1,
+    "min_clusters": 2,
+    "max_clusters": 12
+  },
+  
+  "downstream": {
+    "top_artists": 10,
+    "representative_samples": 20,
+    "top_keywords": 30
+  }
+}
