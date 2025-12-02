@@ -5,7 +5,7 @@ A comprehensive machine learning pipeline for semantic clustering and analysis o
 ![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -20,7 +20,7 @@ A comprehensive machine learning pipeline for semantic clustering and analysis o
 - [Citation](#citation)
 - [License](#license)
 
-## 🎯 Overview
+## Overview
 
 This project implements a complete pipeline for analyzing Chinese rap lyrics through:
 
@@ -32,7 +32,7 @@ This project implements a complete pipeline for analyzing Chinese rap lyrics thr
 
 **Dataset**: 15,000+ songs from 325+ Chinese rap artists
 
-## ✨ Features
+## Features
 
 - **Modular Pipeline**: Clean, maintainable architecture with separate modules for each stage
 - **Resume Capability**: Skip completed stages when re-running
@@ -47,7 +47,7 @@ This project implements a complete pipeline for analyzing Chinese rap lyrics thr
 - **Visualization**: UMAP plots, artist distributions, cluster sizes
 - **Configurable**: JSON-based configuration for hyperparameters
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 pipeline.py                    # Main orchestrator
@@ -78,7 +78,7 @@ Raw Lyrics (TXT)
 [6] Visualization → plots in visualizations/
 ```
 
-## 📦 Installation
+## Installation
 
 ### Requirements
 
@@ -105,7 +105,7 @@ pip install -r requirements.txt
 python -c "import jieba; jieba.initialize()"
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Prepare Your Data
 
@@ -145,7 +145,7 @@ Results will be saved in `/path/to/data/transformed_data/`:
 - `cluster_report_v2.md` - Comprehensive analysis report
 - `visualizations/` - All plots and figures
 
-## 📊 Pipeline Stages
+## Pipeline Stages
 
 ### Stage 1: Data Processing
 
@@ -216,7 +216,7 @@ Creates plots and visualizations:
 - `cluster_sizes.png` - Bar chart of cluster sizes
 - `artist_dist_*.png` - Artist-specific cluster distributions
 
-## ⚙️ Configuration
+## Configuration
 
 ### Custom Configuration File
 
@@ -260,7 +260,7 @@ python pipeline.py --base-dir /path/to/data --config config.json
 | `clustering.umap_neighbors` | 15 | UMAP neighbors |
 | `downstream.top_keywords` | 30 | Keywords per cluster |
 
-## 📁 Output Files
+## Output Files
 
 ### Main Results
 
@@ -289,7 +289,7 @@ python pipeline.py --base-dir /path/to/data --config config.json
 | `song_vectors_v2.npy` | Song-level embeddings |
 | `artist_vectors_v2.npy` | Artist-level embeddings |
 
-## 🔧 Advanced Usage
+## Advanced Usage
 
 ### Resume from Checkpoint
 
@@ -352,7 +352,7 @@ print("Similar songs:")
 print(songs_meta.iloc[top_10][["artist", "song_title"]])
 ```
 
-## 🎓 Research Background
+## Research Background
 
 This pipeline is part of research on **Fine-tuning LLMs for Chinese Rap Lyrics Generation**.
 
@@ -383,9 +383,9 @@ University of Wisconsin–Madison
 
 **Authors**: 
 - Moshi Fu (Statistics, Data Science, & Mathematics)
-- Brendan C. Dowling (PhD, Chinese Language Sciences)
+- Brendan Dowling (PhD, Chinese, Language Sciences)
 
-## 📖 Citation
+## Citation
 
 If you use this pipeline in your research, please cite:
 
@@ -393,19 +393,19 @@ If you use this pipeline in your research, please cite:
 @misc{fu2025chinese,
   title={Fine-tuning LLMs for Chinese Rap Lyrics: 
          Embedding-based Clustering with Contrastive Learning},
-  author={Fu, Moshi and Dowling, Brendan C.},
+  author={Fu, Moshi and Dowling, Brendan},
   year={2025},
   institution={University of Wisconsin--Madison}
 }
 ```
 
-## 📚 References
+## References
 
 1. Sun, Y., et al. (2021). ERNIE 3.0: Large-scale Knowledge Enhanced Pre-training for Language Understanding and Generation.
 2. Campello, R. J. G. B., Moulavi, D., & Sander, J. (2013). Density-Based Clustering Based on Hierarchical Density Estimates.
 3. Gao, T., Yao, X., & Chen, D. (2021). SimCSE: Simple Contrastive Learning of Sentence Embeddings. EMNLP 2021.
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - Chris Endemenn
 - Elaine Wu
@@ -415,11 +415,11 @@ If you use this pipeline in your research, please cite:
 - Google Gemini & OpenAI GPT-4o
 - UW-Madison Research Computing
 
-## 📄 License
+## License
 
 MIT License - see [LICENSE](LICENSE) file for details.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions welcome! Please:
 
@@ -429,12 +429,12 @@ Contributions welcome! Please:
 4. Push to branch (`git push origin feature/improvement`)
 5. Create Pull Request
 
-## 📧 Contact
+## Contact
 
 For questions or collaborations:
 
-- **Moshi Fu**: [your-email@wisc.edu]
-- **Project**: [GitHub Repository URL]
+- **Moshi Fu**: [mfu39@wisc.edu]
+- **Brendan Dowling**: [bcdowling@wisc.edu]
 
 ---
 
